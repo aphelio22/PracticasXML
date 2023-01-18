@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+<horario>
+    <ciclo>DAM</ciclo>
+    <curso>Primero</curso>
+    <aula>Taller de administración</aula>
+    <turno>
+        <mañana>
+            <dia nombre="lunes>
+                <asignatura hora="8:00">Base de Datos</asignatura>
+                <asignatura hora="9:00">Sistemas</asignatura>
+                <asignatura hora="10:00">Programación</asignatura>
+            </dia>
+            
+            <modulos>
+                <modulo nombre="LM">
+                    <hora dia="lunes">9:00</hora>
+                    <hora dia="miercoles">10:00</hora>
+                    <hora dia="miercoles">11:30</hora>
+                </modulo>
+            </modulos>
+        </mañana>
+    </turno>
+</horario>
