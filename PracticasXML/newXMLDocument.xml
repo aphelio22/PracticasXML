@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<pedidos>
+    <pedido id="686567">
+        <cliente>Francisco Romero</cliente>
+        <articulos>
+            <artículo cantidad="1">PS5</artículo>
+        </articulos>
+        <entrega>
+            <dirección>
+                <via>Calle Huerta 3</via>
+                <piso>3</piso>
+                <letra>B</letra>
+            </dirección>
+            <fecha>19/01/2023</fecha>
+        </entrega>
+    </pedido>
+</pedidos>
