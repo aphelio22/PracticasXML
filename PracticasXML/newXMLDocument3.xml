@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<taquillas>
+    <taquilla>
+    <pais>España</pais>
+    <periodo>25 de diciembre al 27 de diciembre.</periodo>
+    <peliculas>
+        <pelicula>
+            <posicionamiento>1</posicionamiento>
+            <titulo>Trolls 2: Gira mundial</titulo>
+            <genero>Animación</genero>
+            <semanas>10</semanas>
+            <recaudacion>
+                <finde>34.000e</finde>
+                <total>2.492.000</total>
+            </recaudacion>
+        </pelicula>
+        <pelicula>
+            <posicionamiento>2</posicionamiento>
+            <titulo>Otra vuelta de tuerca</titulo>
+            <genero>Terror</genero>
+            <semanas>6</semanas>
+            <recaudacion>
+                <finde>22.000e</finde>
+                <total>184.000e</total>
+            </recaudacion>
+        </pelicula>
+    </peliculas>
+    <taquilla>
+</taquillas>
