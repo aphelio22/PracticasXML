@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<reservas>
+    <reserva fecha="12/03/2023" origen="teléfono">
+    <nombre>Jorge Alarcón Navarro</nombre>
+    <telefono>609xxxxxx</telefono>
+    <email>jrgaln.m@gmail.com</email>
+    <fecha>
+        <dia>01</dia>
+        <mes>04</mes>
+        <año>2023</año>
+    </fecha>
+    <personas>3</personas>
+    <presupuesto>200e</presupuesto>
+    <comentario>Hola</comentario>
+    </reserva>
+</reservas>
