@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<facturas>
+    <factura numero = "999">
+        <emisor>
+            <via tipo = "avenida">Av.Valladolid</via>
+            <lugar>Madrid</lugar>
+            <postal>28015</postal>
+            <telefono>91.777.66.88</telefono>
+            <fax>91.777.66.99</fax>
+        </emisor>
+        <fecha>12-01-2005</fecha>
+        <pedido>731</pedido>
+        <pago>Efectivo</pago>
+        <cliente>
+            <numeroCliente>879</numeroCliente>
+            <nombre>Darío Bueno Gutiérrez</nombre>
+            <direccion>
+                <via tipo = "avenida">Av. Oporto</via>
+                <numero>7</numero>
+                <piso>
+                    <numero>4</numero>
+                    <letra>D</letra>
+                </piso>
+                <poblacion>Madrid</poblacion>
+                <postal>28043</postal>
+                <provincia>Madrid</provincia>
+            </direccion>
+        </cliente>
+        <articulos>
+            <artticulo ref cantidad precio iva></articulo>
+        </articulos>
+    </factura>
+</facturas>
+    
+
