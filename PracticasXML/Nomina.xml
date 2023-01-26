@@ -8,7 +8,7 @@ and open the template in the editor.
 
  
 
-<nomina fecha = "01/04/2011" total = ""> 
+<nomina fecha = "01/04/2011" total = "1480,47€"> 
     <trabajador> 
                 <nombre>Luis Gutierrez Alonso</nombre> 
                 <categoria>Ingeniero</categoria> 
@@ -20,51 +20,55 @@ and open the template in the editor.
                 <fecha-fin>31/03/2011</fecha-fin> 
     </liquidacion> 
 
-    <devengos> 
-                <devengo nombre = "salario base">1500</devengo> 
-                <complementos nombre = "complementos salariales"> 
-                        <complemento nombre = "incentivos">192</complemento> 
+    <devengos total= ""> 
+                <devengo nombre = "salario base">1500€</devengo> 
+                <devengo nombre = "complementos salariales"> 
+                        <complemento nombre = "incentivos">192€</complemento> 
                         <complemento nombre = "horas extraordinarias"> 
-                                <estructurales>60</estructurales> 
-                                <fuerza-mayor>100</fuerza-mayor> 
+                                <estructurales>60€</estructurales> 
+                                <fuerza-mayor>100€</fuerza-mayor> 
                       </complemento> 
-               </complementos> 
+               </devengo> 
     </devengos> 
 
-    <deducciones> 
+    <deducciones total = "371,53€"> 
                <deduccion nombre = "contingencias comunes"> 
-                        <base>1942</base> 
+                        <base>1942€</base> 
                         <porcentaje>4.70%</porcentaje> 
               </deduccion> 
             
                <deduccion nombre = "Desempleo"> 
-                        <base>2102</base> 
+                        <base>2102€</base> 
                         <porcentaje>1.55%</porcentaje> 
               </deduccion> 
 
                <deduccion nombre = "Formación Profesional"> 
-                        <base>2102</base> 
+                        <base>2102€</base> 
                         <porcentaje>0.1%</porcentaje> 
               </deduccion> 
 
                 <deduccion nombre = "horas extraordinarias de fuerza mayor"> 
-                        <base>100</base> 
+                        <base>100€</base> 
                         <porcentaje>2%</porcentaje> 
                </deduccion> 
 
                 <deduccion nombre = "Estructurales"> 
-                        <base>60</base> 
+                        <base>60€</base> 
                         <porcentaje>4.70%</porcentaje> 
                </deduccion> 
 
                 <deduccion nombre = "IRPF"> 
-                        <base>1852</base> 
+                        <base>1852€</base> 
                         <porcentaje>13%</porcentaje> 
                </deduccion> 
     </deducciones> 
 
     <cotizaciones> 
-                <cotizacion nombre = "contingencias comunes">1942</cotizacion> 
-                <cotizacion nombre = "contingencias profesionales">2102</cotizacion> 
+                <cotizacion nombre = "contingencias comunes" total = "1942€">
+                <remuneracion-mensual>1692€</remuneracion-mensual>
+                <prorrata>240,76€</prorrata>
+              </cotizacion> 
+                <cotizacion nombre = "contingencias profesionales">2102€</cotizacion>
+              <cotizacion nombre = "horas extraordinadiras">160€</cotizacion>
     </cotizaciones> 
 </nomina> 
