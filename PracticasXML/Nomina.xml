@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+ 
+
+<nomina fecha = "01/04/2011" total = ""> 
+    <trabajador> 
+                <nombre>Luis Gutierrez Alonso</nombre> 
+                <categoria>Ingeniero</categoria> 
+                <grupo>1</grupo> 
+    </trabajador> 
+
+    <liquidacion> 
+                <fecha-inicio>01/03/2011</fecha-inicio> 
+                <fecha-fin>31/03/2011</fecha-fin> 
+    </liquidacion> 
+
+    <devengos> 
+                <devengo nombre = "salario base">1500</devengo> 
+                <complementos nombre = "complementos salariales"> 
+                        <complemento nombre = "incentivos">192</complemento> 
+                        <complemento nombre = "horas extraordinarias"> 
+                                <estructurales>60</estructurales> 
+                                <fuerza-mayor>100</fuerza-mayor> 
+                      </complemento> 
+               </complementos> 
+    </devengos> 
+
+    <deducciones> 
+               <deduccion nombre = "contingencias comunes"> 
+                        <base>1942</base> 
+                        <porcentaje>4.70%</porcentaje> 
+              </deduccion> 
+            
+               <deduccion nombre = "Desempleo"> 
+                        <base>2102</base> 
+                        <porcentaje>1.55%</porcentaje> 
+              </deduccion> 
+
+               <deduccion nombre = "Formación Profesional"> 
+                        <base>2102</base> 
+                        <porcentaje>0.1%</porcentaje> 
+              </deduccion> 
+
+                <deduccion nombre = "horas extraordinarias de fuerza mayor"> 
+                        <base>100</base> 
+                        <porcentaje>2%</porcentaje> 
+               </deduccion> 
+
+                <deduccion nombre = "Estructurales"> 
+                        <base>60</base> 
+                        <porcentaje>4.70%</porcentaje> 
+               </deduccion> 
+
+                <deduccion nombre = "IRPF"> 
+                        <base>1852</base> 
+                        <porcentaje>13%</porcentaje> 
+               </deduccion> 
+    </deducciones> 
+
+    <cotizaciones> 
+                <cotizacion nombre = "contingencias comunes">1942</cotizacion> 
+                <cotizacion nombre = "contingencias profesionales">2102</cotizacion> 
+    </cotizaciones> 
+</nomina> 
