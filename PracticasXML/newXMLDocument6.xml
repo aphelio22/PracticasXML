@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE CESUR[
+    <!ELEMENT CESUR (alumnos, porfesores) >
+    <!ELEMENT alumnos ( alumno+ ) >
+    <!ELEMENT alumno ( contacto, info) >
+    
+    <!ELEMENT contacto ( nombre, dni, telefono, direccion, fecha_nac ) >
+    <!ELEMENT nombre (#PCDATA) >
+    <!ELEMENT dni (#PCDATA) >
+    <!ELEMENT telefono (#PCDATA) >
+    <!ELEMENT fecha_nac (#PCDATA) >
+    
+    <!ELEMENT info ( matricula, ciclo, modulos ) >
+    <!ELEMENT matricula (#PCDATA) >
+    <!ELEMENT ciclo (#PCDATA) >
+    
+    <!ELEMENT modulos ( modulo+ ) >
+    <!ELEMENT modulo (nombre) >
+    <!ATTLIST modulo ciclo CDATA #IMPLIED >
+    
+    <!ELEMENT profesores (profesor+) >
+    <!ELEMENT profesor (contacto, modulos) >
+    
+
+
+]>
+
+<CESUR>
+    <profesores>
+        <profesor>
+            <contacto>
+                <nombre></nombre>
+                <dni></dni>
+                <telefono></telefono>
+                <direccion></direccion>
+                <fecha_nac></fecha_nac>
+                <modulos>
+                    <modulo ciclo = "1DAM">
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                </modulos>
+            </contacto>
+        </profesor>
+    </profesores>
+    <alumnos>
+        <alumno>
+            <contacto>
+                <nombre></nombre>
+                <dni></dni>
+                <telefono></telefono>
+                <direccion></direccion>
+                <fecha_nac></fecha_nac>
+            </contacto>
+            <info>
+                <ciclo></ciclo>
+                <modulos>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                    <modulo>
+                        <nombre></nombre>
+                    </modulo>
+                </modulos>
+            </info>
+        </alumno>
+    </alumnos>
+</CESUR>
