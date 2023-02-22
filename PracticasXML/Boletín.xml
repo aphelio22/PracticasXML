@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE boletin [
+<!ELEMENT boletin (alumnos) >
+<!ELEMENT alumnos (alumno+) >
+<!ELEMENT alumno (nombre, apellido, dni, modulos) >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT apellido (#PCDATA) >
+<!ELEMENT dni (#PCDATA) >
+<!ELEMENT modulos (modulo+) >
+<!ELEMENT modulo (calificacion) >
+<!ATTLIST modulo nombre CDATA #REQUIRED >
+<!ELEMENT calificacion (#PCDATA) >
+]>
+
+<boletin>
+    <alumnos>
+        <alumno>
+            <nombre>Jorge</nombre>
+            <apellido>Alarcón</apellido>
+            <dni>43256789O</dni>
+            <modulos>
+                <modulo nombre = "LM">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "Programación">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "ED">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "SI">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "BD">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "FOL">
+                    <calificacion>6</calificacion>
+                </modulo>
+            </modulos>
+        </alumno>
+        <alumno>
+            <nombre>Paula</nombre>
+            <apellido>Alarcón</apellido>
+            <dni>43254449O</dni>
+            <modulos>
+                <modulo nombre = "LM">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "Programación">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "ED">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "SI">
+                    <calificacion>4</calificacion>
+                </modulo>
+                <modulo nombre = "BD">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "FOL">
+                    <calificacion>6</calificacion>
+                </modulo>
+            </modulos>
+        </alumno>
+        <alumno>
+            <nombre>Jesús</nombre>
+            <apellido>Pérez</apellido>
+            <dni>43252219O</dni>
+            <modulos>
+                <modulo nombre = "Programación">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "ED">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "SI">
+                    <calificacion>4</calificacion>
+                </modulo>
+                <modulo nombre = "BD">
+                    <calificacion>6</calificacion>
+                </modulo>
+                <modulo nombre = "FOL">
+                    <calificacion>6</calificacion>
+                </modulo>
+            </modulos>
+        </alumno>
+    </alumnos>
+</boletin>
+    
+
