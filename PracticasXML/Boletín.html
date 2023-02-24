@@ -2,31 +2,149 @@
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>BoletinXSL.xsl</title>
+        <style>
+                    table{
+                    border-collapse: collapse;
+                      
+                    border: solid;
+                     
+                    }
+                      
+                    table tr th{
+                      
+                    background-color:black;
+                    color:white;
+                    padding: 1em;
+                    border: solid;
+                    border-color: black;
+                      
+                    }
+                      
+                      
+                    table tr td{
+                    padding: 1em;
+                    border: solid;
+                    }
+                    body{
+                    display: flex;
+                    flex-direction: column;
+                    align-items:center;
+                    }
+                      div{
+                       display: flex;
+                    flex-direction: row;
+                    align-items:center;
+                      }
+                      div *{
+                      padding: 5px;
+                      }
+                    tr.top td{
+                    background-color: yellow;
+                    }
+                      h1{
+                      text-align:center;
+                      }
+                    
+                    tr.suspenso td{
+                    background-color: yellow;
+                    }
+                </style>
     </head>
     <body>
-        <h1>Bolet&iacute;n</h1>
+        <div>
+            <h1>
+                Jorge
+                <br>
+                Alarc&oacute;n
+            </h1>
+        </div>
         <table>
             <tr>
-                <th>Nombre</th><th>Apellido</th><th>DNI</th>
+                <th>Modulo</th><th>Calificaciones</th>
             </tr>
             <tr>
-                <td>Jorge</td><td>Alarc&oacute;n</td>
+                <td>LM</td><td>6</td>
+            </tr>
+            <tr>
+                <td>Programaci&oacute;n</td><td>6</td>
+            </tr>
+            <tr>
+                <td>ED</td><td>6</td>
+            </tr>
+            <tr>
+                <td>SI</td><td>6</td>
+            </tr>
+            <tr>
+                <td>BD</td><td>6</td>
+            </tr>
+            <tr>
+                <td>FOL</td><td>6</td>
+            </tr>
+            <tr>
+                <td>Nota Media</td><td>6</td>
             </tr>
         </table>
+        <div>
+            <h1>
+                Paula
+                <br>
+                Alarc&oacute;n
+            </h1>
+        </div>
         <table>
             <tr>
-                <th>Nombre</th><th>Apellido</th><th>DNI</th>
+                <th>Modulo</th><th>Calificaciones</th>
             </tr>
             <tr>
-                <td>Paula</td><td>Alarc&oacute;n</td>
+                <td>LM</td><td>6</td>
+            </tr>
+            <tr>
+                <td>Programaci&oacute;n</td><td>6</td>
+            </tr>
+            <tr>
+                <td>ED</td><td>6</td>
+            </tr>
+            <tr class="suspenso">
+                <td>SI</td><td>4</td>
+            </tr>
+            <tr>
+                <td>BD</td><td>6</td>
+            </tr>
+            <tr>
+                <td>FOL</td><td>6</td>
+            </tr>
+            <tr>
+                <td>Nota Media</td><td>5.666666666666667</td>
             </tr>
         </table>
+        <div>
+            <h1>
+                Jes&uacute;s
+                <br>
+                P&eacute;rez
+            </h1>
+        </div>
         <table>
             <tr>
-                <th>Nombre</th><th>Apellido</th><th>DNI</th>
+                <th>Modulo</th><th>Calificaciones</th>
             </tr>
             <tr>
-                <td>Jes&uacute;s</td><td>P&eacute;rez</td>
+                <td>Programaci&oacute;n</td><td>6</td>
+            </tr>
+            <tr>
+                <td>ED</td><td>6</td>
+            </tr>
+            <tr class="suspenso">
+                <td>SI</td><td>4</td>
+            </tr>
+            <tr>
+                <td>BD</td><td>6</td>
+            </tr>
+            <tr>
+                <td>FOL</td><td>6</td>
+            </tr>
+            <tr>
+                <td>Nota Media</td><td>5.6</td>
             </tr>
         </table>
     </body>
