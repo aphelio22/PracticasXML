@@ -18,20 +18,81 @@
         <html>
             <head>
                 <title>BoletinXSL.xsl</title>
+                <style>
+                    table{
+                    border-collapse: collapse;
+                      
+                    border: solid;
+                     
+                    }
+                      
+                    table tr th{
+                      
+                    background-color:black;
+                    color:white;
+                    padding: 1em;
+                    border: solid;
+                    border-color: black;
+                      
+                    }
+                      
+                      
+                    table tr td{
+                    padding: 1em;
+                    border: solid;
+                    }
+                    body{
+                    display: flex;
+                    flex-direction: column;
+                    align-items:center;
+                    }
+                      div{
+                       display: flex;
+                    flex-direction: row;
+                    align-items:center;
+                      }
+                      div *{
+                      padding: 5px;
+                      }
+                    tr.top td{
+                    background-color: yellow;
+                    }
+                      h1{
+                      text-align:center;
+                      }
+                    
+                    tr.suspenso td{
+                    background-color: yellow;
+                    }
+                </style>
             </head>
             <body>
-                <h1>Boletín</h1> 
                 <xsl:for-each select="/boletin/alumnos/alumno">
+                    <div>
+                <h1>
+                    <xsl:value-of select="nombre"/><br/>
+                    <xsl:value-of select="apellido"/>
+                </h1>
+                    </div>
                     <table>
                         <tr> 
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>DNI</th>
+                            <th>Modulo</th>
+                            <th>Calificaciones</th>
                         </tr>
-                        
+                        <xsl:for-each select="modulos/modulo">
                         <tr>
-                            <td><xsl:value-of select="nombre"/></td>
-                            <td><xsl:value-of select="apellido"/></td>
+                            <xsl:if test="calificacion &lt; 5">
+                                <xsl:attribute name = "class">suspenso</xsl:attribute>
+                            </xsl:if>
+                            <td><xsl:value-of select="@nombre"/></td>
+                            <td><xsl:value-of select="calificacion"/></td>
+                        </tr>
+                        </xsl:for-each>
+                        <tr>
+                            <td>Nota Media</td>
+                            <td>
+                                <xsl:value-of select="sum(modulos/modulo/calificacion) div count(modulos/modulo/calificacion)"/>
+                            </td>
                         </tr>
                     </table>
                 </xsl:for-each>
